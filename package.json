@@ -1,0 +1,9 @@
+{
+  "name": "action-for-js",
+  "version": "1.0.0",
+  "description": "github actions demo",
+  "main": "index.js",
+  "repository": "git@github.com:matiasz8/actions-for-js.git",
+  "author": "Nahuel Quiroga <nahuelq.78@gmail.com>",
+  "license": "MIT"
+}
