@@ -13,9 +13,6 @@ jobs:
               with:
                 node-version: '12'
 
-            - name: enter to app
-              run: cd actions-app
-                 
             - name: Install dependencies
               run: yarn install
             
