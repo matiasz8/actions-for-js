@@ -1,10 +1,11 @@
 on: [push]
-name: React Testing
+name: React test
 
 jobs:
     build:
-        name: Build solution
+        name: build solution
         runs-on: macos-latest
+
         steps:
             - name: Checkout
               uses: actions/checkout@v2
@@ -13,11 +14,8 @@ jobs:
               with:
                 node-version: '12'
 
-            - name: Install dependencies
+            - name: install dependencies
               run: yarn install
-            
-            - name: Run tests
-              run: yarn test
-                 
 
-                
+            - name: run tests
+              run: yarn test
