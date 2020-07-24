@@ -1,0 +1,19 @@
+on: [push]
+name: React Testing
+
+jobs:
+    build:
+        name: Build solution
+        runs-on: macos-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: yarn install
+              run: |
+                 cd action-app
+                 yarn install
+                 yarn test
+                 
+
+                
