@@ -13,12 +13,14 @@ jobs:
               with:
                 node-version: '12'
 
-            - name: yarn
-              run: |
-                 ls
-                 cd actions-app
-                 yarn install
-                 yarn test
+            - name: enter to app
+              run: cd actions-app
+                 
+            - name: Install dependencies
+              run: yarn install
+            
+            - name: Run tests
+              run: yarn test
                  
 
                 
