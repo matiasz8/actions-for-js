@@ -9,9 +9,14 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v2
 
-            - name: yarn install
+            - uses: actions/setup-node@v1
+              with:
+                node-version: '12'
+
+            - name: yarn
               run: |
-                 cd action-app
+                 ls
+                 cd actions-app
                  yarn install
                  yarn test
                  
