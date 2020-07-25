@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Tokko Labs
+          Tokko js
         </a>
       </header>
     </div>
